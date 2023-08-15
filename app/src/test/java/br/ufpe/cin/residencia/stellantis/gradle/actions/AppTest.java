@@ -18,6 +18,12 @@ class AppTest {
         assertEquals(8, App.soma(x, y), "Soma de 3 e 5 deveria ser 8");        
     }
 
+    @Test void resultadoSoma() {
+        int x = 3;
+        int y = 5;
+        assertEquals("3 + 5 = 8", App.resultadoSoma(x, y), "Mensagem está diferente");        
+    }
+
     @Test void multiplicacao() {
         int x = 3;
         int y = 5;

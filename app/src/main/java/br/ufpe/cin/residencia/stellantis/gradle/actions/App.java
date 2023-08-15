@@ -9,13 +9,19 @@ public class App {
     }
 
     public static int soma(int a, int b) { 
-        return a + a;
+        return a + b;
     }
 
     public static int multiplicacao(int a, int b) { 
         return a * b;
     }
 
+    public static int subtracao(int a, int b) { 
+        return a - b;
+    }
+
+
+    
     public static String resultadoSoma(int a, int b) { 
         StringBuilder sb = new StringBuilder();
         //" a + b = resultado(a+b)"
@@ -25,6 +31,26 @@ public class App {
         sb.append(b);
         sb.append(" = "); 
         sb.append(soma(a,b));
+        return sb.toString();
+    }
+
+    public static String resultadoSubtracao(int a, int b) { 
+        StringBuilder sb = new StringBuilder();
+        sb.append(a);
+        sb.append(" - ");
+        sb.append(b);
+        sb.append(" = "); 
+        sb.append(subtracao(a,b));
+        return sb.toString();
+    }
+
+    public static String resultadoMultiplicacao(int a, int b) { 
+        StringBuilder sb = new StringBuilder();
+        sb.append(a);
+        sb.append(" * ");
+        sb.append(b);
+        sb.append(" = "); 
+        sb.append(multiplicacao(a,b));
         return sb.toString();
     }
 

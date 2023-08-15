@@ -11,4 +11,16 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test void soma() {
+        int x = 3;
+        int y = 5;
+        assertEquals(8, App.soma(x, y), "Soma de 3 e 5 deveria ser 8");        
+    }
+
+    @Test void multiplicacao() {
+        int x = 3;
+        int y = 5;
+        assertEquals(15, App.multiplicacao(x, y), "Multiplicação de 3 e 5 deveria ser 15");        
+    }
 }

@@ -21,12 +21,25 @@ class AppTest {
     @Test void resultadoSoma() {
         int x = 3;
         int y = 5;
-        assertEquals("3 + 5 = 8", App.resultadoSoma(x, y), "Mensagem está diferente");        
+        assertEquals("3 + 5 = 8", App.resultadoSoma(x, y), "Mensagem esta diferente");        
     }
 
     @Test void multiplicacao() {
         int x = 3;
         int y = 5;
-        assertEquals(15, App.multiplicacao(x, y), "Multiplicação de 3 e 5 deveria ser 15");        
+        assertEquals(15, App.multiplicacao(x, y), "Multiplicacao de 3 e 5 deveria ser 15");        
     }
+
+    @Test void subtracao() {
+        int x = 5;
+        int y = 3;
+        assertEquals(2, App.subtracao(x, y), "Subtracao de 5 e 3 deveria ser 2");        
+    }
+
+    @Test void divisao() {
+        int x = 10;
+        int y = 5;
+        assertEquals(2, App.divisao(x, y), "Divisao de 10 por 5 deveria ser 2");
+    }
+
 }

@@ -20,7 +20,14 @@ public class App {
         return a - b;
     }
 
-
+    public static int divisao(int a, int b) { 
+        if (b!=0) { 
+            return a/b;
+        }
+        else { 
+            throw new RuntimeException("Divisao por zero!");
+        }
+    }
     
     public static String resultadoSoma(int a, int b) { 
         StringBuilder sb = new StringBuilder();

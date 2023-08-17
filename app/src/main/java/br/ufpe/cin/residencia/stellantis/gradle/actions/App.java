@@ -3,6 +3,8 @@
  */
 package br.ufpe.cin.residencia.stellantis.gradle.actions;
 
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -63,6 +65,17 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        System.out.println(resultadoSoma(3,5));
+        System.out.print("Digite o primeiro número: ");
+        Scanner scanner = new Scanner(System.in);
+        String num1 = scanner.nextLine();
+        System.out.print("Digite o segundo número: ");
+        scanner = new Scanner(System.in);
+        String num2 = scanner.nextLine();
+        int n1 = Integer.valueOf(num1);
+        int n2 = Integer.valueOf(num2);
+        
+        System.out.println(resultadoSoma(n1,n2));
+        System.out.println(resultadoSubtracao(n1,n2));
+        System.out.println(resultadoMultiplicacao(n1,n2));
     }
 }

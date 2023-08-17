@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Olá, Mundo!";
     }
 
     public static int soma(int a, int b) { 
